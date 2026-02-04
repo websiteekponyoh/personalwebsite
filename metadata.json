@@ -1,0 +1,7 @@
+{
+  "name": "Usenobong Ekponyoh - Personal Website",
+  "description": "A bespoke personal website for Usenobong Ekponyoh, showcasing his journey as an entrepreneur, investor, and philanthropist.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
