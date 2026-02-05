@@ -19,28 +19,27 @@ const Home: React.FC = () => {
     <div className="w-full">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-slate-900 overflow-hidden">
-        
+
         {/* Animated Hero Image Layer - Shifted right on desktop */}
-        <div 
-          className={`absolute inset-0 bg-[url('https://i.ibb.co/Y7mvYjr8/Usenobong-Ekponyoh-3.png')] bg-cover bg-center md:bg-right transition-all duration-[1500ms] cubic-bezier(0.22, 1, 0.36, 1) ${
-            showImage ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-          }`}
+        <div
+          className={`absolute inset-0 bg-[url('https://i.ibb.co/Y7mvYjr8/Usenobong-Ekponyoh-3.png')] bg-cover bg-center md:bg-right transition-all duration-[1500ms] cubic-bezier(0.22, 1, 0.36, 1) ${showImage ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+            }`}
         ></div>
-        
+
         {/* Permanent Gradient Layer for text contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent z-0"></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20 w-full">
           <div className="max-w-4xl text-left">
-            <h1 className="text-white text-6xl md:text-9xl font-extrabold mb-4 leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up">
+            <h1 className="text-white text-4xl md:text-9xl font-extrabold mb-4 leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up">
               Usenobong <br />
               <span className="text-blue-400">Ekponyoh</span>
             </h1>
-            <p className="text-blue-400 text-lg md:text-2xl font-bold mb-8 tracking-widest uppercase drop-shadow-lg opacity-0 animate-fade-in-up delay-100">
+            <p className="text-blue-400 text-sm md:text-2xl font-bold mb-8 tracking-widest uppercase drop-shadow-lg opacity-0 animate-fade-in-up delay-100">
               Entrepreneur | Investor | Philanthropist | Strategic Innovator
             </p>
             <p className="text-slate-100 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl drop-shadow-lg opacity-0 animate-fade-in-up delay-200">
-              Building resilient, future-ready enterprises across Technology, Agriculture, Construction, and Energy. 
+              Building resilient, future-ready enterprises across Technology, Agriculture, Construction, and Energy.
               Bridging the gap between traditional business models and modern innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-start opacity-0 animate-fade-in-up delay-300">
@@ -65,7 +64,7 @@ const Home: React.FC = () => {
               Strategic leadership and operational excellence across high-impact global industries.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {IMPACT_AREAS.map((area, idx) => (
               <div key={idx} className="group p-8 bg-slate-50 rounded-2xl hover:bg-brand-blue transition-all duration-300 shadow-sm hover:shadow-2xl hover:-translate-y-2">
