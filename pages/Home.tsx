@@ -36,7 +36,7 @@ const Home: React.FC = () => {
               <span className="text-blue-400">Ekponyoh</span>
             </h1>
             <p className="text-blue-400 text-sm md:text-2xl font-bold mb-8 tracking-widest uppercase drop-shadow-lg opacity-0 animate-fade-in-up delay-100">
-              Entrepreneur | Investor | Philanthropist | Strategic Innovator
+              Entrepreneur | Investor | Strategic Innovator
             </p>
             <p className="text-slate-100 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl drop-shadow-lg opacity-0 animate-fade-in-up delay-200">
               Building resilient, future-ready enterprises across Technology, Agriculture, Construction, and Energy.
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2 text-left">
               <h2 className="text-slate-900 text-4xl font-bold mb-6 text-left">Bridging Tradition & Innovation</h2>
               <p className="text-slate-600 text-lg mb-6 leading-relaxed text-left">
-                Usenobong Ekponyoh is a multifaceted entrepreneur with a proven track record of launching and scaling ventures in strategic sectors. As Founder & CEO of eFaculty ICT Centre, he drives digital transformation and inclusive economic growth.
+                Usenobong Ekponyoh is a multifaceted entrepreneur with a proven track record of launching and scaling ventures in strategic sectors. As founder & CEO of Crud Cellz, eFaculty ICT Centre, MetaVolt Project Ltd, he drives digital transformation and inclusive economic growth.
               </p>
               <p className="text-slate-600 text-lg mb-8 leading-relaxed text-left">
                 His leadership reflects a rare blend of operational strategy, creative brand development, and a deep commitment to sustainable business practices rooted in integrity and service.
@@ -163,34 +163,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Philanthropy Highlight */}
-      <section className="py-24 bg-brand-blue text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-800 -skew-x-12 translate-x-1/2 opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
-          <div className="max-w-3xl">
-            <div className="bg-white/10 w-12 h-12 rounded-full flex items-center justify-center mb-6">
-              <Heart className="text-white" size={24} fill="currentColor" />
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left">Profit with Purpose: Driving Social Impact</h2>
-            <p className="text-blue-100 text-lg mb-10 leading-relaxed text-left">
-              True entrepreneurship goes beyond the bottom line. Usenobong is deeply committed to youth empowerment, mentorship, and building sustainable community programs that foster social responsibility.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 mb-12 justify-start">
-              <div className="bg-white/10 p-6 rounded-xl border border-white/20 text-left">
-                <div className="text-3xl font-bold mb-1">500+</div>
-                <div className="text-blue-200 text-sm">Youths Empowered</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-xl border border-white/20 text-left">
-                <div className="text-3xl font-bold mb-1">10+</div>
-                <div className="text-blue-200 text-sm">Community Projects</div>
-              </div>
-            </div>
-            <Link to="/philanthropy" className="bg-white text-brand-blue px-8 py-4 rounded-lg font-bold inline-flex items-center hover:bg-blue-50 transition-colors justify-start">
-              Impact & Initiatives <ArrowRight className="ml-2" />
-            </Link>
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-24 bg-slate-50">

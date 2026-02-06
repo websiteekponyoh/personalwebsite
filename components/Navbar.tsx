@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Ventures', path: '/ventures' },
-    { name: 'Impact', path: '/philanthropy' },
     { name: 'Investments', path: '/investments' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -24,9 +23,9 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img 
-                src="https://i.ibb.co/nqrK3z82/Usenobong-Ekponyoh-4.png" 
-                alt="Usenobong Ekponyoh" 
+              <img
+                src="https://i.ibb.co/nqrK3z82/Usenobong-Ekponyoh-4.png"
+                alt="Usenobong Ekponyoh"
                 className="h-[58px] w-auto object-contain"
               />
             </Link>
@@ -37,9 +36,8 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  isActive(link.path) ? 'text-brand-blue font-bold border-b-2 border-brand-blue' : 'text-slate-600 hover:text-brand-blue'
-                }`}
+                className={`text-sm font-medium transition-colors duration-200 ${isActive(link.path) ? 'text-brand-blue font-bold border-b-2 border-brand-blue' : 'text-slate-600 hover:text-brand-blue'
+                  }`}
               >
                 {link.name}
               </Link>
@@ -69,9 +67,8 @@ const Navbar: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block px-3 py-3 rounded-md text-base font-medium ${
-                  isActive(link.path) ? 'bg-blue-50 text-brand-blue' : 'text-slate-600 hover:bg-slate-50'
-                }`}
+                className={`block px-3 py-3 rounded-md text-base font-medium ${isActive(link.path) ? 'bg-blue-50 text-brand-blue' : 'text-slate-600 hover:bg-slate-50'
+                  }`}
               >
                 {link.name}
               </Link>

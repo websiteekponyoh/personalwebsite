@@ -17,19 +17,19 @@ const Contact: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-            
+
             <div className="lg:col-span-1 text-left">
               <h2 className="text-3xl font-bold text-slate-900 mb-8">Get in Touch</h2>
               <p className="text-slate-600 mb-12 leading-relaxed">
                 Whether it's a strategic partnership, a philanthropic inquiry, or a speaking engagement, I'm open to discussing how we can create lasting value.
               </p>
-              
+
               <div className="space-y-8 mb-12">
                 <div className="flex gap-5 items-start text-left">
                   <div className="bg-blue-50 p-4 rounded-xl text-brand-blue shrink-0"><Mail size={24} /></div>
                   <div>
                     <h4 className="font-bold text-slate-900">Email Address</h4>
-                    <p className="text-slate-600">info@uekponyoh.com</p>
+                    <p className="text-slate-600">info@usenobong-ekponyoh.com</p>
                   </div>
                 </div>
                 <div className="flex gap-5 items-start text-left">
@@ -60,25 +60,29 @@ const Contact: React.FC = () => {
 
             <div className="lg:col-span-2 text-left">
               <div className="bg-slate-50 p-10 md:p-12 rounded-[2.5rem] border border-slate-100">
-                <form className="space-y-6">
+                <form action="https://formspree.io/f/xnjbargv" method="POST" className="space-y-6">
+                  {/* Formspree Configuration */}
+                  <input type="hidden" name="_next" value="https://usenobong-ekponyoh.com/thank-you" />
+                  <input type="hidden" name="_subject" value="New Contact Inquiry" />
+                  <input type="hidden" name="_template" value="table" />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
-                      <input type="text" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="John Doe" />
+                      <input type="text" name="name" required className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="John Doe" />
                     </div>
                     <div>
                       <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
-                      <input type="email" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="john@example.com" />
+                      <input type="email" name="email" required className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none" placeholder="john@example.com" />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-bold text-slate-700 mb-2">Inquiry Type</label>
-                    <select className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none bg-white">
+                    <select name="inquiry_type" className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none bg-white">
                       <option>General Inquiry</option>
                       <option>Business Partnership</option>
                       <option>Investment Opportunity</option>
-                      <option>Philanthropy / Charity</option>
                       <option>Speaking Engagement</option>
                       <option>Mentorship Request</option>
                     </select>
@@ -86,10 +90,10 @@ const Contact: React.FC = () => {
 
                   <div>
                     <label className="block text-sm font-bold text-slate-700 mb-2">Message</label>
-                    <textarea className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none min-h-[150px]" placeholder="How can we help each other?"></textarea>
+                    <textarea name="message" required className="w-full px-5 py-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all outline-none min-h-[150px]" placeholder="How can we help each other?"></textarea>
                   </div>
 
-                  <button className="w-full bg-brand-blue text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-all shadow-xl shadow-blue-900/10">
+                  <button type="submit" className="w-full bg-brand-blue text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition-all shadow-xl shadow-blue-900/10">
                     Send Secure Message
                   </button>
                 </form>

@@ -11,15 +11,15 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="mb-6">
               <Link to="/">
-                <img 
-                  src="https://i.ibb.co/nqrK3z82/Usenobong-Ekponyoh-4.png" 
-                  alt="Usenobong Ekponyoh" 
-                  className="h-[67px] w-auto object-contain brightness-0 invert" 
+                <img
+                  src="https://i.ibb.co/nqrK3z82/Usenobong-Ekponyoh-4.png"
+                  alt="Usenobong Ekponyoh"
+                  className="h-[67px] w-auto object-contain brightness-0 invert"
                 />
               </Link>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Entrepreneur, Investor, and Philanthropist building resilient, future-ready enterprises across Technology, Energy, and Agriculture.
+              Entrepreneur, Investor, and Strategic Innovator building resilient, future-ready enterprises across Technology, Energy, and Agriculture.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-brand-blue transition-colors">
@@ -39,7 +39,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li><Link to="/about" className="text-slate-400 hover:text-white transition-colors">Detailed Biography</Link></li>
               <li><Link to="/ventures" className="text-slate-400 hover:text-white transition-colors">Business Portfolio</Link></li>
-              <li><Link to="/philanthropy" className="text-slate-400 hover:text-white transition-colors">Philanthropic Work</Link></li>
               <li><Link to="/blog" className="text-slate-400 hover:text-white transition-colors">Insights & Articles</Link></li>
               <li><Link to="/gallery" className="text-slate-400 hover:text-white transition-colors">Photo Gallery</Link></li>
             </ul>
@@ -59,7 +58,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-slate-400">
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-brand-blue" />
-                <span>info@uekponyoh.com</span>
+                <span>info@usenobong-ekponyoh.com</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-brand-blue" />

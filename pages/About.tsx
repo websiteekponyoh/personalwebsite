@@ -11,7 +11,8 @@ const About: React.FC = () => {
   ];
 
   const academicResearch = [
-    { title: "Seismic Data Analysis Research", link: "https://share.google/MklCywIZWRHJRY9gM" },
+    { title: "Seismic Data Analysis Research", link: "https://share.google/dF3iE9RlU88ZA3f95" },
+    { title: "Source: IIARD", link: "https://share.google/BOH6pS3HjMHg2xOj6" },
     { title: "Strategic Innovation Case Study", link: "https://share.google/6r8MVrXURVvxLcVTY" },
     { title: "Sustainable Energy Analysis", link: "https://share.google/DzbxeJH7i3X52tugL" }
   ];
@@ -37,7 +38,7 @@ const About: React.FC = () => {
                 <div className="aspect-square bg-slate-100 rounded-3xl overflow-hidden shadow-xl border border-slate-100">
                   <img src="https://i.ibb.co/8LdjKpVc/Usenobong-Ekponyoh.jpg" alt="Usenobong" className="w-full h-full object-cover" />
                 </div>
-                
+
                 {/* Education Section */}
                 <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-left">
                   <h3 className="font-bold text-xl mb-6 text-slate-900 flex items-center">
@@ -48,16 +49,16 @@ const About: React.FC = () => {
                       <p className="font-bold text-slate-900">M.Sc. Exploration Geophysics</p>
                       <p className="text-sm text-slate-500">University of Port Harcourt, Nigeria</p>
                     </div>
-                    
+
                     <div className="pt-4 border-t border-slate-200">
                       <p className="text-xs font-bold text-brand-blue uppercase tracking-widest mb-4">Featured Contributions</p>
                       <ul className="space-y-3">
                         {academicResearch.map((res, i) => (
                           <li key={i}>
-                            <a 
-                              href={res.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer" 
+                            <a
+                              href={res.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="group flex items-center justify-between p-3 bg-white border border-slate-100 rounded-xl hover:border-brand-blue transition-colors shadow-sm"
                             >
                               <span className="text-xs font-semibold text-slate-700">{res.title}</span>
@@ -71,7 +72,7 @@ const About: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="lg:w-2/3 text-left">
               <h2 className="text-3xl font-bold mb-8 text-slate-900 flex items-center">
                 <BookOpen className="mr-3 text-brand-blue" /> The Multi-Faceted Entrepreneur
@@ -86,12 +87,12 @@ const About: React.FC = () => {
                 <p>
                   Throughout his career, Usenobong has demonstrated a remarkable ability to identify market opportunities and transform them into profitable and sustainable ventures. His entrepreneurial journey reflects willpower, resilience, creativity, determination, courage, and an exceptional spirit of reinvention.
                 </p>
-                
+
                 <h3 className="text-2xl font-bold text-slate-900 pt-8">Leadership Philosophy</h3>
                 <p>
                   Usenobong represents a rare tribe of integrity-driven, value-based entrepreneurs. While his business interests span multiple industries, his foundation remains deeply rooted in faith, purpose, and service. He believes that true entrepreneurship goes beyond profit—it is about making impact, creating lasting value, and fostering social responsibility.
                 </p>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
                   <div className="p-6 bg-slate-50 rounded-xl border-l-4 border-brand-blue">
                     <h4 className="font-bold text-slate-900 mb-2">Hard Work & Resilience</h4>
@@ -113,7 +114,7 @@ const About: React.FC = () => {
 
                 <h3 className="text-2xl font-bold text-slate-900 pt-8">Personal Interests</h3>
                 <p>
-                  Outside the boardroom, Usenobong is deeply passionate about philanthropy and charitable initiatives. His personal interests include travel, art, health, and wellness, guided by the belief that personal well-being is essential for sustained professional excellence.
+                  Outside the boardroom, Usenobong is deeply passionate about travel, art, health, and wellness, guided by the belief that personal well-being is essential for sustained professional excellence.
                 </p>
               </div>
             </div>
@@ -133,10 +134,10 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {profileGallery.map((src, idx) => (
               <div key={idx} className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg group border border-slate-100">
-                <img 
-                  src={src} 
-                  alt={`Usenobong Ekponyoh Profile ${idx + 1}`} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                <img
+                  src={src}
+                  alt={`Usenobong Ekponyoh Profile ${idx + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
             ))}
@@ -151,7 +152,7 @@ const About: React.FC = () => {
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Professional Timeline</h2>
             <p className="text-slate-500">Over a decade of strategic evolution and growth.</p>
           </div>
-          
+
           <div className="relative border-l-2 border-brand-blue/30 ml-4 max-w-4xl pb-10">
             {[
               { year: '2012', title: 'Beginning of Journey', desc: 'Started professional career focusing on technical excellence in geophysics.' },
