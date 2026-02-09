@@ -22,8 +22,8 @@ const Home: React.FC = () => {
 
         {/* Animated Hero Image Layer - Shifted right on desktop */}
         <div
-          className={`absolute inset-0 bg-[url('https://i.ibb.co/Y7mvYjr8/Usenobong-Ekponyoh-3.png')] bg-cover bg-center md:bg-right transition-all duration-[1500ms] cubic-bezier(0.22, 1, 0.36, 1) ${showImage ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
-            }`}
+          className={`absolute inset-0 bg-cover bg-center transition-all duration-[1500ms] cubic-bezier(0.22, 1, 0.36, 1) ${showImage ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'
+            } bg-[url('https://i.ibb.co/Y7mvYjr8/Usenobong-Ekponyoh-3.png')] md:bg-[url('https://i.ibb.co/LXFq1Bbv/Usenobong-Ekponyoh-2.png')] md:bg-right`}
         ></div>
 
         {/* Permanent Gradient Layer for text contrast */}
@@ -31,18 +31,21 @@ const Home: React.FC = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20 w-full">
           <div className="max-w-4xl text-left">
-            <h1 className="text-white text-4xl md:text-9xl font-extrabold mb-4 leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up">
+            <h1 className="text-white text-4xl md:text-9xl font-extrabold mb-8 md:mb-4 leading-[0.9] tracking-tighter opacity-0 animate-fade-in-up">
               Usenobong <br />
               <span className="text-blue-400">Ekponyoh</span>
             </h1>
-            <p className="text-blue-400 text-sm md:text-2xl font-bold mb-8 tracking-widest uppercase drop-shadow-lg opacity-0 animate-fade-in-up delay-100">
+            <p className="text-blue-400 text-sm md:text-2xl font-bold mb-6 md:mb-8 tracking-widest uppercase drop-shadow-lg opacity-0 animate-fade-in-up delay-100">
               Entrepreneur | Investor | Strategic Innovator
             </p>
-            <p className="text-slate-100 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl drop-shadow-lg opacity-0 animate-fade-in-up delay-200">
+            <p className="text-slate-100 text-lg leading-relaxed mb-4 drop-shadow-lg opacity-0 animate-fade-in-up delay-200 md:hidden">
+              Building resilient, future-ready enterprises through strategic innovation.
+            </p>
+            <p className="text-slate-100 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl drop-shadow-lg opacity-0 animate-fade-in-up delay-200 invisible md:visible">
               Building resilient, future-ready enterprises across Technology, Agriculture, Construction, and Energy.
               Bridging the gap between traditional business models and modern innovation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-start opacity-0 animate-fade-in-up delay-300">
+            <div className="flex flex-col sm:flex-row gap-4 justify-start md:opacity-0 md:animate-fade-in-up md:delay-300">
               <Link to="/about" className="bg-brand-blue text-white px-8 py-4 rounded-lg font-bold flex items-center justify-center hover:bg-blue-800 transition-all shadow-xl shadow-blue-900/20 group">
                 Explore My Story <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
